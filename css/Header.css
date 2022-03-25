@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-thumb {
+  background: cornsilk;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 30px;
+}
+
+body {
+  background: #e9e8e3;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 400px;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+header {
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 25px;
+  margin-top: -4px;
+}
+nav {
+  display: flex;
+}
+header .img {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+header .nav {
+  display: flex;
+}
+img {
+  width: 110px;
+  height: 120px;
+}
+
+header nav a {
+  margin: 40px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  text-align: center;
+}
+header .img a {
+  margin: 30px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.registratediv {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.registrate {
+  margin-top: 9px;
+}
+.logo {
+  height: 120px;
+  width: 110px;
+  display: flex;
+}
+.registratediv:hover {
+  box-shadow: 0 1px 10px 0px rgba(175, 175, 175, 0.8);
+}
+li a:hover {
+  border-bottom: 1px solid black;
+}
+li {
+  list-style: none;
+}
+nav .iniciar:hover {
+  border-bottom: 1px solid black;
+}
+
+/* estilos para menu bar*/
+
+.icono-menu {
+  display: none;
+  position: relative;
+}
+.icono-menu img {
+  cursor: pointer;
+}
+
+/*ul.show{
+  top: 65px;
+}
+.items{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+*/
+
+/*@media screen and (max-width: 858px){
+  header{
+    top: 0px;
+  }
+  .icono-menu{
+    display: inline-flex;
+  }
+  .img li{
+  position: fixed;
+  width: 100vh;
+ height: calc(100% - 65px);
+ background: #414141;
+  top: -100vh;
+  text-align: center;
+  transition: all .4s;
+  flex-direction: column;
+  }
+  .nav a {
+    position: fixed;
+    width: 100vh;
+   height: calc(100% - 65px);
+   background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .nav .registratediv{
+    position: fixed;
+    width: 100vh;
+   height: calc(100% - 65px);
+   background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  } 
+
+  
+}
+*/
+
+.icono-menu img {
+  display: flex;
+  z-index: 999;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  margin-left: -100px;
+  cursor: pointer;
+}
+
+/*estilos para el contenedor del menu*/
+
+.cont-menu {
+  z-index: 998;
+  box-shadow: -19px 1px 21px 4px rgba(21, 21, 41, 0.2);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e8e3;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+/*estilos para javascript*/
+.active {
+  transform: translate(700px);
+  display: none;
+  transition: all 1s ease;
+}
+.desaparecemenu{
+  transform: translate(-700px);
+
+}
+
+/*.opacity {
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}*/
+
+/*estlos para el listado del menu*/
+
+.cont-menu ul {
+  padding: 0px 60px 20px 0px;
+  list-style: none;
+ 
+}
+.cont-menu ul a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 0px 50px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.postre{
+margin-left: 80px;
+width: 160px;
+height: 160px;
+}
+
+
+.cont-menu ul a:hover {
+ 
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 37px 12px rgba(30, 30, 60, 0.15);
+}
+.menucontine {
+  display: flex;
+}
+
+.inici {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+.contienelis {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*medias querys*/
+
+@media screen and (max-width: 1020px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .learn-more {
+    display: flex;
+    margin-top: -500px;
+  }
+
+  .contienetituloyimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+
+    height: 100px;
+  }
+  .img li {
+    font-size: 14px;
+    margin: -130px;
+    margin-left: 100px;
+  }
+  .img li {
+    margin: -40px;
+    width: 200px;
+  }
+  .nav {
+    display: flex;
+    margin-top: -0px;
+    font-size: 20px;
+  }
+  .nav a {
+    font-size: 14px;
+  }
+}
+.icono-menu{
+  font-size: 45px;
+}
+
+#icono-menu{
+  display: none;
+  z-index: 1000;
+  
+}
+
+@media screen and (max-width: 1140px) {
+  .parrafo {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1058px) {
+  .learn-more {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .learn-more {
+    margin-top: -520px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .parrafoquienes {
+    width: 700px;
+  }
+  .quienes {
+    margin-left: -50px;
+  }
+}
+
+.h2nuestro {
+  margin-left: 660px;
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+
+    margin-left: 20px;
+  }
+  .icono-menu {
+    display: flex;
+  }
+  .contienelis {
+    display: none;
+  }
+
+  .inici {
+    display: none;
+  }
+#icono-menu{
+  display: flex;
+}
+
+
+
+}
+
+
+
+.Header{
+
+}
+
+/*  <div class="menucontine">
+    
+                    <div class="icono-menu desaparece">
+                        <img src="/img/menubar.png" alt="" id="icono-menu">
+                    </div>
+                    
+                    <div class="cont-menu active" id="menu">
+                        <ul>
+                            <a href="">Restaurantes</a>
+                            <a href="">Quienes Somos</a>
+                            <a href="">Contacto</a>
+                            <a href="">Iniciar Sesion</a>
+                            <a href="">Registrate</a>
+                        </ul>
+                    </div>
+                </div>*/

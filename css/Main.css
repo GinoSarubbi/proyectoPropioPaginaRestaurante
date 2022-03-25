@@ -1,0 +1,222 @@
+.chef {
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: -40px;
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+  display: flex;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .learnmore {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .learnmore {
+  color: #fff;
+}
+.learnmore {
+  text-decoration: none;
+}
+
+.contenedormain {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.titulo {
+  display: flex;
+
+  flex-direction: column;
+}
+.titulo h1 {
+  font-size: 80px;
+  margin-top: 10px;
+}
+.titulo h3 {
+  font-weight: 100;
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+p {
+  margin-top: 70px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contienetituloyimg {
+  display: flex;
+  gap: 150px;
+}
+.btn {
+  margin-top: -130px;
+  margin-left: 30px;
+}
+
+.mainabajo {
+  margin-top: 100px;
+}
+
+.mainabajo img {
+  width: 500px;
+  height: 400px;
+}
+.restaurantes {
+  margin: 50px;
+  margin-left: -600px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 260px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+  margin-top: 40px;
+
+  margin: 30px auto;
+}
+
+.card:hover {
+  border: #2b2c2c 0.2em solid;
+}
+
+.quienessomos {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.quienes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 100px auto;
+}
+.parrafoquienes {
+  margin-top: 10px;
+}
+
+.parrafodiv {
+  display: flex;
+}
+
+.divflecha {
+  float: right;
+
+  background-color: transparent;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 89%;
+  left: 96.5%;
+  cursor: pointer;
+}
+
+.imgflecha {
+  position: relative;
+}
+.imgflceha2 {
+  margin-top: 7px;
+}
